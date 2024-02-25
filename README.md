@@ -16,17 +16,21 @@
 ```bash
 pip install -r backend/requirements.txt
 
-###ѕеременные окружени€
+### ѕеременные окружени€
+
 —оздайте файл .env в корне проекта и укажите в нем необходимые переменные окружени€, такие как SECRET_KEY, DATABASE_URL и другие.
 
-###«апуск проекта в контейнерах
+### «апуск проекта в контейнерах
+
 docker-compose up
 
 ѕосле выполнени€ этих шагов, проект Kittygram будет доступен по адресу http://localhost:8000/.
 
-###“естирование
+### “естирование
+
 pip install -r requirements.txt
 pytest
 
-###GitHub Actions
+### GitHub Actions
+
 GitHub Actions настроены дл€ автоматического тестировани€ и депло€ проекта Kittygram после каждого push в ветку main.
