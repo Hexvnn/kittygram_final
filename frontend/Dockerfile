@@ -1,9 +1,9 @@
 FROM node:18
 WORKDIR /app
 
-COPY . .
-
 RUN npm ci
+
+COPY . .
 
 RUN npm run build
 RUN npm install --global http-server
