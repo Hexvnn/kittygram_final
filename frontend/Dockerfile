@@ -1,10 +1,10 @@
 FROM node:18
 WORKDIR /app
 
-RUN npm ci
-
 COPY . .
-
+ 
+RUN npm ci 
+ 
 RUN npm run build
 RUN npm install --global http-server
 
